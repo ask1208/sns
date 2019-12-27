@@ -10,8 +10,25 @@
 <body>
   <div class=img>
   <div class="wapper">
-
   <header class="header">SNS</header>
+  <!-- ログイン機能 -->
+  <div class="flex-center position-ref full-height"> 
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+
+
+
     <div class="contents"></div>
     <div class="form">
         <form class="new_message" id="new_message" enctype="multipart/form-data" action="/sns/public/timeline"  accept-charset="UTF-8" method="post">
@@ -39,7 +56,8 @@
         <div class="tweet-wrappar">
         @foreach($tweets as $tweet)
         <div style="padding:2rem; border-top: solid 1px #E6ECF0; border-bottom: solid 1px #E6ECF0;">
-         <div>{{ $tweet->tweet }}: {{ $tweet -> created_at}}</div>
+         <div>{{ $tweet->tweet }}</div>
+         <div>{{ $tweet -> created_at}}</div>
         </diV>
         @endforeach
     
