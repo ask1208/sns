@@ -12,7 +12,7 @@
   <div class="wapper">
   <header class="header">SNS</header>
   <!-- ログイン機能 -->
-  <div class="flex-center position-ref full-height"> 
+        <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
