@@ -11,7 +11,7 @@ class TimelineController extends Controller
 {
     public function showTimeLinePage()
     {
-    $tweets = Tweet::latest()->get();   
+    $tweets = Tweet::paginate(5);   
     return view('auth.timeline',compact('tweets'));  // resource/views/auth/timeline.blade.phpを表示する
 
     }
