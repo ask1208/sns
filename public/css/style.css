@@ -10,6 +10,8 @@ html, body {
   text-align: center;
   font-size: 60px;
   font-family: 'Skia',sans-serif;
+  font-weight: bold;
+  
 
 }
 
@@ -23,8 +25,6 @@ html, body {
   height: 800px;
   width: 960px;
   margin: 0 auto;
-  
- 
 }
 
 .form{
@@ -35,17 +35,13 @@ html, body {
   position: absolute;
   top: 150px;
   left: 450px;
-
 }
 
 label {
   color: white;  
-  background-color: rgb(157, 157, 240);
   padding: 6px;
   border-radius: 12px;
   padding: 10px;
-
-
 }
 
 .submit-btn{
