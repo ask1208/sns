@@ -10,8 +10,8 @@ use \App\Tweet;
 class TimelineController extends Controller
 {
     public function showTimeLinePage()
-    {
-    $tweets = Tweet::paginate(5);   
+    {    
+    $tweets = Tweet::orderBy('created_at','asc')->paginate(5);   
     return view('auth.timeline',compact('tweets'));  // resource/views/auth/timeline.blade.phpを表示する
 
     }

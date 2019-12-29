@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SNS作ってみた</title>
   <link href="{{asset("css/style.css")}}" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"   rel="stylesheet">
 </head>
 <body>
   <div class=img>
@@ -31,7 +32,7 @@
 
     <div class="contents"></div>
     <div class="form">
-        <form class="new_message" id="new_message" enctype="multipart/form-data" action="/timeline"  accept-charset="UTF-8" method="post">
+        <form class="new_message" id="new_message" enctype="multipart/form-data" action="/sns/public/timeline"  accept-charset="UTF-8" method="post">
         {{ csrf_field() }}    
         <input name="utf8" type="hidden" >
           <div class="input-box">
