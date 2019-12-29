@@ -32,7 +32,7 @@
 
     <div class="contents"></div>
     <div class="form">
-        <form class="new_message" id="new_message" enctype="multipart/form-data" action="/sns/public/timeline"  accept-charset="UTF-8" method="post">
+        <form class="new_message" id="new_message" enctype="multipart/form-data" action="/timeline"  accept-charset="UTF-8" method="post">
         {{ csrf_field() }}    
         <input name="utf8" type="hidden" >
           <div class="input-box">
