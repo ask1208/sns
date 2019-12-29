@@ -60,7 +60,11 @@
          <div>{{ $tweet -> created_at}}</div>
         </diV>
         @endforeach
-    
+
+       <div class="paginate">
+	        {{ $tweets->links() }}
+        </div>
+
     </div>
       
 </body>
