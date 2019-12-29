@@ -45,9 +45,14 @@ label {
 }
 
 .submit-btn{
+  background-color: transparent;
   position: absolute;
   top: 150px;
   left: 650px;
+}
+
+.submit-btn:hover {
+  background-color: rgba(13, 187, 218, 0.8);
 }
 
 .left-content{
