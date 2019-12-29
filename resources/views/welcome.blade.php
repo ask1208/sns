@@ -25,14 +25,14 @@
         </style>
     </head>
     <body>
-       <div class="video-content">
-           <video src="https://tech-dig.jp/wp/wp-content/uploads/2018/05/test.mp4"  autoplay playsinline muted loop></video> 
+       <!-- <div class="video-content">
+           <video src="https://tech-dig.jp/wp/wp-content/uploads/2018/05/test.mp4"  autoplay playsinline muted loop></video>  -->
 
             <div class="content">
                 <div class="top-btn">
                 <a href="{{ url('/timeline') }}"> click </a>
                 </div>
             </div>
-        </div>    
+        <!-- </div>     -->
     </body>
 </html>
