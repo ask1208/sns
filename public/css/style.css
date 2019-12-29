@@ -4,6 +4,13 @@ html, body {
   padding: 0;
 }
 
+.video-content{
+  position: relative;
+}
+
+video{
+  width: 100%;
+}
 .content {
   text-align: center;
   font-size: 80px;
@@ -106,3 +113,14 @@ label {
   padding: 30px;  
   
 }
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+  }
+
+  .top-btn :hover{
+    color: rgb(247, 132, 208);
+  }
