@@ -56,7 +56,7 @@
 
         <div class="tweet-wrappar">
         @foreach($tweets as $tweet)
-        <div style="padding:2rem; border-top: solid 1px #E6ECF0; border-bottom: solid 1px #E6ECF0;">
+        <div style="padding:2rem; border-top: solid 1px #E6ECF0; border-bottom: solid 1px #E6ECF0;" class="tweet-waku">
          <div>{{ $tweet->tweet }}</div>
          <div>{{ $tweet -> created_at}}</div>
         </diV>
